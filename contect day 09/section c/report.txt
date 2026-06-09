@@ -1,0 +1,3 @@
+Highest90
+Lowest45
+Average70
