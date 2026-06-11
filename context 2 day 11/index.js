@@ -160,7 +160,7 @@
 
 // Q8
 // const fs = require("fs");
-// fs.readFile("a.txt", "utf-8", (err, data) => {
+// fs.readFile("q8.txt", "utf-8", (err, data) => {
 //   if (err) {
 //     console.log("Nahh can't read");
 //   }
@@ -199,30 +199,31 @@
 // });
 
 // Q10
-const transactions= [
-  { user:"Aman", type:"credit", amount:1000 },
-  { user:"Aman", type:"debit", amount:200 },
-  { user:"Riya", type:"credit", amount:500 },
-  { user:"Riya", type:"debit", amount:100 }
-];
-var ans={}
-transactions.forEach((u)=>{
-  var n=u.user;
-  if(n in ans){
-    if(u.type=="credit"){
-      ans[n]=ans[n]+u.amount
-    }
-    else{
-      ans[n]=ans[n]-u.amount
-    }
-  }
-  else{
-    if(u.type=="credit"){
-      ans[n]=u.amount
-    }
-    else{
-      ans[n]=0-u.amount
-    }
-  }
-})
-console.log(ans)
+// const transactions= [
+//   { user:"Aman", type:"credit", amount:1000 },
+//   { user:"Aman", type:"debit", amount:200 },
+//   { user:"Riya", type:"credit", amount:500 },
+//   { user:"Riya", type:"debit", amount:100 }
+// ];
+// var ans={}
+// transactions.forEach((u)=>{
+//   var n=u.user;
+//   if(n in ans){
+//     if(u.type=="credit"){
+//       ans[n]=ans[n]+u.amount
+//     }
+//     else{
+//       ans[n]=ans[n]-u.amount
+//     }
+//   }
+//   else{
+//     if(u.type=="credit"){
+//       ans[n]=u.amount
+//     }
+//     else{
+//       ans[n]=0-u.amount
+//     }
+//   }
+// })
+// console.log(ans)
+
