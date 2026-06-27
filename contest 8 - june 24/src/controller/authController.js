@@ -1,5 +1,5 @@
 const { pool } = require("../db")
-const {signupValid} = require("../types/types")
+const {signupValid, signinValid} = require("../types/types")
 const bcrypt = require("bcrypt")
 
 async function signupController(req,res){
@@ -29,6 +29,8 @@ async function signupController(req,res){
 }
 
 function signinController(req,res){
+    const {success,data}=signinValid.safeParse(req.body)
+    
 
 
 }
